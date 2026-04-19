@@ -3,7 +3,7 @@
 <head> 
 
 
-<title> </title>
+<title>Application 6 - Real Time Systems </title>
 </head>
 
 <body>
