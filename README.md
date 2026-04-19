@@ -16,6 +16,9 @@
         statuses, notifications, the mic controls, and how different areas of the game will change the color for Ambient lighting. I used the buttons to mimick the buttons on the Dual Sense controller and how they are used in games.
         The buttons, like on any controller and any game, can be used for interactions, standard game play, and quick time events.
 
+        Here is a short video showing how my system looks!
+        https://youtu.be/WIX79Cow2TE?si=Y0km8U59TfrXVDK7
+
 
     </p>
     
