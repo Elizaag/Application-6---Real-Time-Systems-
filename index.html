@@ -10,10 +10,84 @@
 body {
     font-family: 'Baskervville';
     font-size: 22px;
-    background-color: rgba(214, 73, 13, 0.659);
-    
-
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(skyblue, white);
     }
+
+    /* Cloud shape */
+.cloud {
+    position: absolute;
+    background: white;
+    border-radius: 50px;
+    opacity: 0.9;
+}
+
+/* Different cloud sizes */
+.cloud::before,
+.cloud::after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+}
+
+/* Cloud 1 */
+.cloud1 {
+    width: 120px;
+    height: 60px;
+    top: 80px;
+    left: -150px;
+    animation: moveClouds 20s linear infinite;
+}
+
+/* Cloud fluff */
+.cloud1::before {
+    width: 60px;
+    height: 60px;
+    top: -20px;
+    left: 10px;
+}
+
+.cloud1::after {
+    width: 70px;
+    height: 70px;
+    top: -30px;
+    left: 50px;
+}
+
+/* Cloud 2 */
+.cloud2 {
+    width: 160px;
+    height: 70px;
+    top: 180px;
+    left: -200px;
+    animation: moveClouds 30s linear infinite;
+}
+
+.cloud2::before {
+    width: 80px;
+    height: 80px;
+    top: -25px;
+    left: 20px;
+}
+
+.cloud2::after {
+    width: 90px;
+    height: 90px;
+    top: -35px;
+    left: 70px;
+}
+
+/* Animation */
+@keyframes moveClouds {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(120vw);
+    }
+}
 
 </style>
 
@@ -23,7 +97,7 @@ body {
     <p> This project was an assignment in which we designed and programmed a Real Time System based off our dream company.
         I based my design off of the designs of Sony Interactive Entertainment (Playstation), the game design of EA, and the 
         game design of Nintendo.
-        I used the gyroscope to mimick the Gyroscope sensors in the Dual Sense controller and how nintendo uses the Gyroscope in 
+        I used the Gyroscope to mimick the Gyroscope sensors in the Dual Sense controller and how nintendo uses the Gyroscope in 
         Zelda Breath of the Wild. I used the LEDs the way the Dual Sense controller uses them for in-games actions,
         statuses, notifications, the mic controls, and how different areas of the game will change the color for Ambient lighting. I used the buttons to mimick the buttons on the Dual Sense controller and how they are used in games.
         The buttons, like on any controller and any game, can be used for interactions, standard game play, and quick time events.
