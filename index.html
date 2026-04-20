@@ -14,14 +14,34 @@ body {
     height: 100vh;
     overflow: hidden;
     background: linear-gradient(skyblue, white);
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, h3, p, iframe {
+    position: relative;
+    z-index: 2;
+
     }
 
+    /*sky layer to have clouds go behind it */
+.sky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
     /* Cloud shape */
 .cloud {
     position: absolute;
     background: white;
     border-radius: 50px;
     opacity: 0.9;
+    animation: moveClouds 20s linear infinite;
+    z-index: 0;
 }
 
 /* Different cloud sizes */
@@ -93,6 +113,7 @@ body {
 </style>
 
 <body>
+    <div class = "sky">
     <div class="cloud cloud1"></div>
     <div class="cloud cloud2"></div>
     <h1 class="copperplate-text">Application 6 - Real Time Systems</h1>
